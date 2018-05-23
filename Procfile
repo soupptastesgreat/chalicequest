@@ -1,0 +1,1 @@
+web: gunicorn chalice.wsgi --log-file -
