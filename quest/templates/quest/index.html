@@ -1,0 +1,31 @@
+{% extends 'quest/base.html' %}
+
+{% block body %}
+
+<div class="container pt-5">
+	<div class="row justify-content-center pt-5">
+		<div id="introduction">
+			<h1>Welcome to ChaliceQuest!</h1>
+			<p>The king is dying! Only by drinking from an enchanted chalice can save him! Choose which chalice is enchanted to save the king!</p>
+		</div>
+
+		{% load static %}
+		<img width="250px" height="250px" onmouseover="this.src='{% static "quest/images/chalice1glow.jpg" %}'" onmouseout="this.src='{% static "quest/images/chalice1.jpg" %}'" onclick="wronganswer()" src="{% static "quest/images/chalice1.jpg" %}" />
+
+		<img width="250px" height="250px" onmouseover="this.src='{% static "quest/images/chalice2glow.jpg" %}'" onmouseout="this.src='{% static "quest/images/chalice2.jpg" %}'" onclick="rightanswer()" src="{% static "quest/images/chalice2.jpg" %}" />
+
+		<img width="250px" height="250px" href="https://github.com/awkwardio" target="_blank" onmouseover="this.src='{% static "quest/images/chalice3glow.jpg" %}'" onmouseout="this.src='{% static "quest/images/chalice3.jpg" %}'" onclick="wronganswer()" src="{% static "quest/images/chalice3.jpg" %}" />
+	
+	</div>
+</div>
+
+<script type="text/javascript">
+function wronganswer() {
+	alert("Sorry. You picked the wrong chalice! Try again.")
+}
+function rightanswer() {
+	alert("The king is saved! You picked the right chalice. Congratulations!")
+}
+</script>
+
+{% endblock %}

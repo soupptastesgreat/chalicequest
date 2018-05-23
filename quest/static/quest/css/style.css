@@ -1,0 +1,15 @@
+html, body {
+	height: 100%;
+}
+body {
+	background: linear-gradient(#9800dd, #003363);
+}
+#introduction {
+	text-align: justify;
+}
+#introduction h1 {
+	color: white;
+}
+#introduction p {
+	color: white;
+}
