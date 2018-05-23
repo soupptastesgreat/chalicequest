@@ -1,6 +1,15 @@
 html, body {
-	width: 100%;
+	height: 100%;
 }
-#descript {
-	padding-top: 1000px;
+body {
+	background: linear-gradient(#9800dd, #003363);
+}
+#introduction {
+	text-align: justify;
+}
+#introduction h1 {
+	color: white;
+}
+#introduction p {
+	color: white;
 }
